@@ -1,5 +1,5 @@
 Socket: 
--> Socket is used for the realtime communication
--> Bidirectional Low latency communication
--> good and fast as compare to the basic client server architecture
--> It helps to create chatting application
+-> Socket is used for the realtime communication.
+-> Bidirectional Low latency communication.
+-> good and fast as compare to the basic client server architecture.
+-> It helps to create chatting application.
