@@ -1,8 +1,19 @@
+import Person from "./components/person"
+import './App.css'; 
 const app=()=>{
   return (
-  <div>
-    <h1>TODO List</h1>
+    <div className="middlebox">
+      <Person/>
+      <Person/>
+      <Person/>
+      <Person/>
+      <Person/>
+      <Person/>
+      <Person/>
+      <Person/>
+
     </div>
+  
     )
 }
 export default app;
