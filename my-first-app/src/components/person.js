@@ -1,10 +1,12 @@
 import './person.css'; 
-const person=()=>{
+const person=(props)=>{
+console.log(props);
+
     return (
        <article className="person">
-        <h6>Name: Tanya Bansal</h6>
-        <h6>Age:23</h6>
-        <h6> Company Name:TATA AIG</h6>
+        <h2>Name: {props.name}</h2>
+        <h3>Age:{props.age}</h3>
+        <h3> Company Name:{props.company}</h3>
        </article>
     )
 }
