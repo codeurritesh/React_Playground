@@ -1,22 +1,18 @@
 const Alltodos=["homeword","Shopping","Eating","Coding","Project","Schlorship"];
-// const addbutton=document.getElementById("addtodo");
-// // let clicked=false;
-// addbutton.addEventListener('click',()=>{
-// alert('clicked');})
-// console.log(clicked);
+
+var showform=true;
+var showdiv=false;
 const todos=()=>{
     const shoot = () => {
-        alert("Great Shot!");
-        return (
-            <div>
-<h1>Button clicked</h1>  
-</div>    )
+        showform=true;
+        showdiv=false;
+        console.log("button clicked")
       }
         
 return (
-
-
     <div>
+
+    {showform && (<div>
     <div className="person">
         <h3>All todos</h3>
         <ul>
@@ -30,6 +26,13 @@ return (
     
   
     </div>
+)}
+{showdiv && (
+    <div>
+        <h1> Hello Clicked</h1>
+    </div>
+)}
+</div>
 )
 
 }
