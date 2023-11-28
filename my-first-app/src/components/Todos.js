@@ -1,18 +1,13 @@
 const Alltodos=["homeword","Shopping","Eating","Coding","Project","Schlorship"];
+const middlebox=document.getElementsByClassName("middlebox");
 
-var showform=true;
-var showdiv=false;
+
 const todos=()=>{
     const shoot = () => {
-        showform=true;
-        showdiv=false;
-        console.log("button clicked")
+        console.log(middlebox);
       }
         
 return (
-    <div>
-
-    {showform && (<div>
     <div className="person">
         <h3>All todos</h3>
         <ul>
@@ -23,16 +18,6 @@ return (
         <button className="btn btn-dark" id="addtodo" onClick={shoot}>Add new todo</button>
 
     </div>
-    
-  
-    </div>
-)}
-{showdiv && (
-    <div>
-        <h1> Hello Clicked</h1>
-    </div>
-)}
-</div>
 )
 
 }
